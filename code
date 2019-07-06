@@ -1,0 +1,5 @@
+#Trimming off first 15 bases of every read to account for 6 bases of barcode that had to be ignored during sequencing
+#Using fastx toolkit
+
+module load fastx_toolkit
+fastx_trimmer -f 15 -i BS3127_S47_L002_R2_001.fastq -o BS3127_S47_L002_R2_001.trimmed.fastq
